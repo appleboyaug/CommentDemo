@@ -15,7 +15,7 @@
 @interface BulletView ()
 
 @property (nonatomic, strong) UILabel *lbComment;
-
+@property BOOL bDealloc;
 @end
 
 @implementation BulletView
@@ -61,6 +61,10 @@
     }
     
     dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(dur * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+        //避免重复，通过变量判断是否已经释放了资源，释放后，不在进行操作
+        if (self.bDealloc) {
+            return;
+        }
         //dur时间后弹幕完全进入屏幕
         if (self.moveBlock) {
             self.moveBlock(Enter);
@@ -81,6 +85,7 @@
 
 
 - (void)stopAnimation {
+    self.bDealloc = YES;
     [self.layer removeAllAnimations];
     [self removeFromSuperview];
 }
