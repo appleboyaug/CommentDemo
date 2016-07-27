@@ -34,7 +34,7 @@
     self.bStopAnimation = YES;
     [self.bulletQueue enumerateObjectsUsingBlock:^(id  _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
         BulletView *view = obj;
-        [view removeFromSuperview];
+        [view stopAnimation];
         view = nil;
     }];
 }
