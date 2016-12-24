@@ -15,6 +15,8 @@
 		C30D0FBA1C78662C008C7F4F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C30D0FB81C78662C008C7F4F /* LaunchScreen.storyboard */; };
 		C30D0FC41C786792008C7F4F /* BulletView.m in Sources */ = {isa = PBXBuildFile; fileRef = C30D0FC31C786792008C7F4F /* BulletView.m */; };
 		C30D0FC71C786AC8008C7F4F /* BulletManager.m in Sources */ = {isa = PBXBuildFile; fileRef = C30D0FC61C786AC8008C7F4F /* BulletManager.m */; };
+		C455FB751E0E1E530061FE93 /* BulletBackgroudView.m in Sources */ = {isa = PBXBuildFile; fileRef = C455FB741E0E1E530061FE93 /* BulletBackgroudView.m */; };
+		C455FB771E0E2D120061FE93 /* 1111.png in Resources */ = {isa = PBXBuildFile; fileRef = C455FB761E0E2D120061FE93 /* 1111.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +34,9 @@
 		C30D0FC31C786792008C7F4F /* BulletView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BulletView.m; sourceTree = "<group>"; };
 		C30D0FC51C786AC8008C7F4F /* BulletManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BulletManager.h; sourceTree = "<group>"; };
 		C30D0FC61C786AC8008C7F4F /* BulletManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BulletManager.m; sourceTree = "<group>"; };
+		C455FB731E0E1E530061FE93 /* BulletBackgroudView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BulletBackgroudView.h; sourceTree = "<group>"; };
+		C455FB741E0E1E530061FE93 /* BulletBackgroudView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BulletBackgroudView.m; sourceTree = "<group>"; };
+		C455FB761E0E2D120061FE93 /* 1111.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 1111.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,6 +75,7 @@
 				C30D0FB01C78662C008C7F4F /* ViewController.h */,
 				C30D0FB11C78662C008C7F4F /* ViewController.m */,
 				C30D0FB31C78662C008C7F4F /* Main.storyboard */,
+				C455FB761E0E2D120061FE93 /* 1111.png */,
 				C30D0FB61C78662C008C7F4F /* Assets.xcassets */,
 				C30D0FB81C78662C008C7F4F /* LaunchScreen.storyboard */,
 				C30D0FBB1C78662C008C7F4F /* Info.plist */,
@@ -93,6 +99,8 @@
 				C30D0FC31C786792008C7F4F /* BulletView.m */,
 				C30D0FC51C786AC8008C7F4F /* BulletManager.h */,
 				C30D0FC61C786AC8008C7F4F /* BulletManager.m */,
+				C455FB731E0E1E530061FE93 /* BulletBackgroudView.h */,
+				C455FB741E0E1E530061FE93 /* BulletBackgroudView.m */,
 			);
 			path = Bullet;
 			sourceTree = "<group>";
@@ -157,6 +165,7 @@
 				C30D0FBA1C78662C008C7F4F /* LaunchScreen.storyboard in Resources */,
 				C30D0FB71C78662C008C7F4F /* Assets.xcassets in Resources */,
 				C30D0FB51C78662C008C7F4F /* Main.storyboard in Resources */,
+				C455FB771E0E2D120061FE93 /* 1111.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -168,6 +177,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C30D0FB21C78662C008C7F4F /* ViewController.m in Sources */,
+				C455FB751E0E1E530061FE93 /* BulletBackgroudView.m in Sources */,
 				C30D0FAF1C78662C008C7F4F /* AppDelegate.m in Sources */,
 				C30D0FC41C786792008C7F4F /* BulletView.m in Sources */,
 				C30D0FAC1C78662C008C7F4F /* main.m in Sources */,
@@ -318,6 +328,7 @@
 				C30D0FC01C78662C008C7F4F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

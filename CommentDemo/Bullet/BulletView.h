@@ -24,8 +24,11 @@ typedef NS_ENUM(NSInteger, Trajectory) {
 @interface BulletView : UIView
 @property (nonatomic, copy) void(^moveBlock)(CommentMoveStatus status);
 @property Trajectory trajectory; //弹幕弹道定义
+@property (nonatomic, strong) UILabel *lbComment;
+
 
 - (instancetype)initWithContent:(NSString *)content;
 - (void)startAnimation;
 - (void)stopAnimation;
+
 @end

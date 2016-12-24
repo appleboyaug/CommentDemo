@@ -14,7 +14,6 @@
 #define Padding  5
 @interface BulletView ()
 
-@property (nonatomic, strong) UILabel *lbComment;
 @property BOOL bDealloc;
 @end
 
@@ -27,6 +26,7 @@
 
 - (instancetype)initWithContent:(NSString *)content {
     if (self == [super init]) {
+        self.userInteractionEnabled = NO;
         self.backgroundColor = [UIColor redColor];
         NSDictionary *attributes = @{
                                      NSFontAttributeName:[UIFont systemFontOfSize:14]
@@ -44,7 +44,6 @@
     }
     return self;
 }
-
 
 - (void)startAnimation {
     
